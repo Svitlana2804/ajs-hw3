@@ -1,5 +1,5 @@
 // Поясніть своїми словами, як ви розумієте, що таке деструктуризація і навіщо вона потрібна
-
+// Деструктуризація потрібна щоб масиви і об*єкти розкладати на змінні і константи під час присвоєння.Простими словами -це поділ складних частин на прості.
 // Усі завдання потрібно виконати, використовуючи синтаксис деструктуризації
 // Завдання 1
 const clients1 = [
@@ -156,9 +156,13 @@ console.log("6.Info about Klichko:>", newEmployee);
 // Завдання 7
 // Доповніть код так, щоб він коректно працював
 
-// const array = ['value', () => 'showValue'];
+const array = ['value', () => 'showValue'];
 
-// // Допишіть код тут
+const firstElement = array[0];
+alert('Перший елемент:', firstElement);
 
-// alert(value); // має бути виведено 'value'
-// alert(showValue());  // має бути виведено 'showValue'
+const secondElement = array[1];
+const resultOfFunction = secondElement();
+alert('Результат функції:', resultOfFunction); 
+
+
